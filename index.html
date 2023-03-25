@@ -20,6 +20,48 @@ body, html {
   min-height: 93%;
 }
 
+@media screen and (min-width: 601px) {
+  button {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+}
+@media screen and (min-width: 601px) {
+  .w3-button {
+    padding: 5px 10px;
+  }
+
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  button {
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .w3-button {
+    padding: 4px 8px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .txtarea {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .txtarea {
+    width: 550px;
+  }
+
+}
+
 .menu {
   display: none;
 }
@@ -47,21 +89,25 @@ tr:nth-child(even) {
 </head>
 <body>
 
+
+
   <!-- https://docs.google.com/forms/d/e/1FAIpQLSc3eaDbAzRKBtGtX0K3tvZxxXl54j34DKUCfEB5z9mIzo-kkw/viewform?usp=pp_url&entry.939152964=dd&entry.381954319=dddd -->
 
   <div id="id01" class="w3-modal">
     <div class="w3-modal-content">
       <div class="w3-container">
-        <span onclick="document.getElementById('id01').style.display='none'" style="font-size: 30px;" class="w3-button w3-display-topright">&times;</span>
+        <span onclick="document.getElementById('id01').style.display='none'" style="font-size: 30px;padding: 1% 2%;" class="w3-button w3-display-topright">&times;</span>
         <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc159p10DRgEOM-bvO01OdCci7jGLA_IYX3TepXmUgldGNBqA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">    
         <!-- <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc3eaDbAzRKBtGtX0K3tvZxxXl54j34DKUCfEB5z9mIzo-kkw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">     -->
 
           Title:<br>
           <input type="text" name="entry.2034140229" id="entry.2034140229" required><br>
+          Affiliation:<br>
+          <input type="text" name="entry.854022965" id="entry.854022965" required><br>
           Authors:<br>
           <input type="text" name="entry.1648076850" id="entry.1648076850" required><br>
           Abstract:<br> 
-          <textarea name="entry.384657099" id="entry.384657099" style="width: 550px;height:200px" required></textarea>
+          <textarea class="txtarea" name="entry.384657099" id="entry.384657099" style="height:200px" required></textarea>
           <input type="submit" value="Submit">
 
           <!-- Title:<br>
@@ -77,6 +123,28 @@ tr:nth-child(even) {
       </div>
     </div>
   </div>
+
+
+  <div id="id02" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id02').style.display='none'" style="font-size: 30px;padding: 1% 2%;" class="w3-button w3-display-topright">&times;</span>
+<!-- sgredsher -->
+        Put Accomodation Info Here
+      </div>
+    </div>
+  </div>
+
+  <div id="id03" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id03').style.display='none'" style="font-size: 30px;padding: 1% 2%;" class="w3-button w3-display-topright">&times;</span>
+        Put Registration Info Here
+    <!-- rehehewr -->
+      </div>
+    </div>
+  </div>
+
 
 
   <!-- https://docs.google.com/forms/d/e/1FAIpQLSc159p10DRgEOM-bvO01OdCci7jGLA_IYX3TepXmUgldGNBqA/viewform?usp=pp_url&entry.2034140229=akls;j;als;&entry.1648076850=asd,kajsd&entry.384657099=aLKJasldjk -->
@@ -100,16 +168,28 @@ tr:nth-child(even) {
 <!-- Links (sit on top) -->
 <div class="w3-top">
   <div class="w3-row w3-padding w3-maroon">
-    <div class="w3-col s5">
+    <div class="w3-col s3">
       <a href="#" class="w3-block w3-maroon"> <img src="usc.jpeg" style="width:80px;height:40px;"></a>
     </div>
 
-    <div class="w3-col s4" style="font-size: 23px;font-weight: bold;">
+    <!-- <div class="w3-col s3" style="font-size: 23px;font-weight: bold;">
       Tentative Conference Schedule
+    </div> -->
+
+    <div class="w3-col s3">
+      <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-maroon">Registration</button>
+
+      <!-- <a href="#menu" class="w3-button w3-block w3-maroon">MENU</a> -->
     </div>
 
-    <div class="w3-col s2">
-      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Abstract</button>
+    <div class="w3-col s3">
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-maroon">Abstract Submission</button>
+
+      <!-- <a href="#menu" class="w3-button w3-block w3-maroon">MENU</a> -->
+    </div>
+
+    <div class="w3-col s1">
+      <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-maroon">Accomodation</button>
 
       <!-- <a href="#menu" class="w3-button w3-block w3-maroon">MENU</a> -->
     </div>
@@ -118,10 +198,10 @@ tr:nth-child(even) {
 
     </div> -->
 
-    <div class="w3-col s1" style="padding-left: 3%;">
+    <!-- <div class="w3-col s1" style="padding-left: 3%;">
       <a href="#" class="w3-block w3-maroon"> <img src="usc-logo.jpg" style="width:80px;height:40px;"></a>
 
-    </div>
+    </div> -->
     <!-- <div class="w3-col s3">
       <a href="#menu" class="w3-button w3-block w3-maroon">MENU</a>
     </div>
