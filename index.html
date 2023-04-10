@@ -6,7 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 <link href="landing_design.css" rel="stylesheet" type="text/css"/>
+  
 <link rel="stylesheet" href="https://fonts.googleapsis.com/css?family=Inconsolata"/>
+<link rel="stylesheet" href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fstackpath.bootstrapcdn.com%2Fbootstrap%2F4.5.2%2Fcss%2Fbootstrap.min.css&data=05%7C01%7Ccs113%40mailbox.sc.edu%7C80267f8a07d945dd0f4b08db3a12a390%7C4b2a4b19d135420e8bb2b1cd238998cc%7C0%7C0%7C638167623945603208%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000%7C%7C%7C&sdata=1UCsBaPePqliAJH%2B5RcSONDVa9OIfkDC5NgoVBIZVpI%3D&reserved=0" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <style>
 body, html {
   height: 100%;
@@ -296,7 +298,7 @@ tr:nth-child(even) {
       
         <tr>
             <td> 9:10 am - 9:50 am  </td>
-            <td title="I will discuss some recent development in my group and others, on training machine learning neural networks to mimic high level QM calculations, from energies, to forces, charges,  dipoles, and NMR chemical shifts. The resulting methods can reproduce the results of true QM calculations to within 1 kcal/mol accuracy, while being faster by up to seven orders of magnitude. Calculations that could take a day, are now possible in the sub-millisecond timescale."> Machine Learning for Quantum Chemistry  </td> 
+            <td data-toggle="tooltip" title="I will discuss some recent development in my group and others, on training machine learning neural networks to mimic high level QM calculations, from energies, to forces, charges,  dipoles, and NMR chemical shifts. The resulting methods can reproduce the results of true QM calculations to within 1 kcal/mol accuracy, while being faster by up to seven orders of magnitude. Calculations that could take a day, are now possible in the sub-millisecond timescale."> Machine Learning for Quantum Chemistry  </td> 
             <td> Adrian E. Roitberg (UF) </td>
           </tr>
       
@@ -622,6 +624,26 @@ $('#gform').on('submit', function(e) {
   document.getElementById("submission_message").style.display = "block"; 
   // $('#submission_message').style.display = 'block';
   // $('#gform').prepend('Your submission has been processed...');
+  $("[data-toggle=tooltip]").tooltip();
   });
 </script>
+
+<script
+    src="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fnpm%2Fpopper.js%401.16.1%2Fdist%2Fumd%2Fpopper.min.js&data=05%7C01%7Ccs113%40mailbox.sc.edu%7C4ee4b95472df4f0e79e908db3a11c0eb%7C4b2a4b19d135420e8bb2b1cd238998cc%7C0%7C0%7C638167620791709063%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000%7C%7C%7C&sdata=PQMIsLr3nb9xR4I%2BM1g%2B3xBdx7nc88U9xwXhDKhiPlE%3D&reserved=0"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous">
+</script>
+<script
+    src="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fstackpath.bootstrapcdn.com%2Fbootstrap%2F4.5.2%2Fjs%2Fbootstrap.min.js&data=05%7C01%7Ccs113%40mailbox.sc.edu%7C4ee4b95472df4f0e79e908db3a11c0eb%7C4b2a4b19d135420e8bb2b1cd238998cc%7C0%7C0%7C638167620791709063%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C2000%7C%7C%7C&sdata=UsuPvFIjQIaKBxJkITYaJNb4io1%2B7kfiheEKom6OVwM%3D&reserved=0"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous">
+</script>
+
+
 </html>
+
+
+
+
+
+
