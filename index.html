@@ -247,7 +247,7 @@ tr:nth-child(even) {
 <!-- Add a background color and large text to the whole page -->
 
 <div class="w3-sand w3-grayscale w3-large">
-  <div class="w3-container" id="about" >
+  <div class="w3-container">
       <div class="w3-content" style="max-width:1000px">
          <p style="font-size: 17px;text-align: justify;"> We are pleased to announce that the 51st Southeast Theoretical Chemistry Association (SETCA) meeting will now be held at the University of South Carolina, Columbia, SC from May 11-13 of 2023. SETCA conferences have been held annually since 1970.  SETCA'23 meeting will begin with a poster session on Thursday evening, and will run through noon on Saturday, and will be preceded by a python workshop for undergraduate chemists.
           SETCA is a loose organization of theoretical and computational chemists from across the Southeastern United States. Since its inception in 1970 by Prof. Bruno Linder of Florida State University, its primary function has been an annual conference to give faculty, students, and postdoctoral associates an opportunity to present their most recent research results.   We are looking forward to a vibrant mix of invited and contributed talks, poster presentations and scientific discussions.</p>
@@ -257,7 +257,7 @@ tr:nth-child(even) {
          </div>
 
 <div class="w3-sand w3-grayscale w3-large">
-    <div class="w3-container" id="about" >
+    <div class="w3-container">
         <div class="w3-content" style="max-width:1000px">
            <p style="font-size: 30px;font-weight: bold;"> Thursday, May 11, 2023</p>
     <table>
@@ -614,9 +614,9 @@ document.getElementById("myLink").click();
 
 </body>
 
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
+<script src="jquery.min.js"></script>
+<script >var submitted=false;</script>
+<script >
 $('#gform').on('submit', function(e) {
   $('#gform').fadeOut(100);
   document.getElementById("submission_message").style.display = "block"; 
