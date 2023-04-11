@@ -13,6 +13,10 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
     crossorigin="anonymous">
+<script>
+  var submitted=false;
+</script>
+    
 <style>
 body, html {
   height: 100%;
@@ -617,7 +621,7 @@ tr:nth-child(even) {
 </script>
 
 <script > 
-var submitted=false;
+
 $('#gform').on('submit', function(e) {
   $('#gform').fadeOut(100);
   document.getElementById("submission_message").style.display = "block"; 
